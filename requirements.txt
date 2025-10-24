@@ -1,4 +1,8 @@
 # Web Framework
+setuptools>=59.5.0
+wheel>=0.38.4
+
+
 Flask==2.3.3
 flask-cors==4.0.0
 Werkzeug==2.3.7
