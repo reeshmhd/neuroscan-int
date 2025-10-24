@@ -22,11 +22,10 @@ Pillow==10.0.0
 pandas==2.0.3
 
 # Utilities
-python-dotenv==1.0.0
-pathlib
-flask==2.3.0
+Flask==2.3.0
 flask-cors==4.0.0
-torch==2.1.0+cpu
-torchvision==0.16.0+cpu
+torch==2.0.0
+torchvision==0.15.0
 Pillow==10.0.0
 gunicorn==21.2.0
+Werkzeug==2.3.0
