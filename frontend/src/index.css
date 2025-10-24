@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* --- MEDICAL DESIGN SYSTEM --- */
+@layer base {
+  :root {
+    --background: 231 22% 98%;
+    --foreground: 228 14% 20%;
+    --primary: 217 91% 60%;
+    --primary-contrast: 0 0% 100%;
+    --danger: 0 83% 54%;
+    --success: 160 84% 39%;
+    --warning: 39 100% 50%;
+    --border: 214 32% 91%;
+    --muted: 220 14% 96%;
+  }
+
+  body {
+    @apply bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 min-h-screen font-sans antialiased text-gray-900;
+  }
+  * {
+    @apply transition-all duration-300;
+  }
+}
+
+/* --- COMPONENTS --- */
+@layer components {
+  .btn-primary {
+    @apply bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-8 py-4 rounded-xl font-semibold shadow-lg hover:shadow-2xl hover:from-blue-700 hover:to-indigo-700 hover:-translate-y-1 active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+  .btn-float {
+    @apply bg-blue-700 text-white px-5 py-2 rounded-lg font-medium shadow-md hover:bg-blue-800 hover:-translate-y-1;
+  }
+  .gradient-medical {
+    @apply bg-gradient-to-br from-blue-500 via-blue-600 to-indigo-600;
+  }
+  .card-medical {
+    @apply rounded-2xl p-8 shadow-xl border border-gray-200/70 bg-white/90 backdrop-blur-xl transition hover:shadow-2xl hover:-translate-y-1 hover:border-blue-200 duration-300;
+  }
+  .card-hero {
+    @apply rounded-2xl shadow-xl p-8 bg-gradient-to-br from-blue-100/80 via-white/80 to-indigo-100/80 border border-blue-100/50;
+  }
+}
+
+/* --- FOR RESULTS CHART (BARCHART) --- */
+@layer components {
+  .chart-bar {
+    @apply rounded-xl bg-gradient-to-br from-blue-400 via-blue-600 to-indigo-600 shadow-md;
+  }
+  .chart-bar-inactive {
+    @apply rounded-xl bg-gradient-to-br from-gray-200 via-slate-300 to-gray-300/80;
+  }
+  .chart-label {
+    @apply text-xs md:text-sm font-semibold text-gray-600 group-hover:text-blue-700;
+  }
+}
+
+/* --- ANIMATIONS AND UTILITIES --- */
+@layer utilities {
+  .animate-fade-in {
+    animation: fadeIn 0.5s ease-in;
+  }
+  .animate-slide-up {
+    animation: slideUp 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .animate-pulse-slow {
+    animation: pulse 2.2s cubic-bezier(.4,0,.6,1) infinite;
+  }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes slideUp {
+  0% { transform: translateY(30px); opacity:0; }
+  100% { transform: translateY(0); opacity:1; }
+}

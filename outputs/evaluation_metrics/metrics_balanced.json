@@ -1,0 +1,7 @@
+{
+  "test_accuracy": 0.9355555555555556,
+  "balanced_accuracy": 0.9355555555555556,
+  "best_val_acc": 0.9311111111111111,
+  "model": "ResNet50 Transfer Learning (Balanced Dataset)",
+  "samples_per_class": 1500
+}

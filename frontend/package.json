@@ -1,0 +1,29 @@
+{
+    "name": "alz-predict-web",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview"
+    },
+    "dependencies": {
+        "lucide-react": "^0.260.0",
+        "react": "^18.0.0",
+        "react-dom": "^18.0.0",
+        "react-router-dom": "^6.30.1",
+        "recharts": "^2.15.4"
+    },
+    "devDependencies": {
+        "@types/node": "^24.8.1",
+        "@types/react": "^18.3.26",
+        "@types/react-dom": "^18.3.7",
+        "@types/react-router-dom": "^5.3.3",
+        "@vitejs/plugin-react-swc": "^3.0.0",
+        "autoprefixer": "^10.0.0",
+        "postcss": "^8.0.0",
+        "tailwindcss": "^3.0.0",
+        "typescript": "^5.0.0",
+        "vite": "^7.1.10"
+    }
+}

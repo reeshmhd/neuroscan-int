@@ -1,0 +1,12 @@
+{
+  "test_accuracy": 0.1403225806451613,
+  "balanced_accuracy": 0.32720139843029494,
+  "best_val_acc": 0.2857142857142857,
+  "classes": [
+    "Normal",
+    "VeryMild",
+    "Mild",
+    "Moderate"
+  ],
+  "preprocessing": "SimpleITK (Medical-Grade)"
+}

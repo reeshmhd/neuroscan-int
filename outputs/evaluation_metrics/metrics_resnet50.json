@@ -1,0 +1,8 @@
+{
+  "test_accuracy": 0.12741935483870967,
+  "balanced_accuracy": 0.29597292541077713,
+  "best_val_acc": 0.3510204081632653,
+  "model": "ResNet50 + Attention",
+  "loss": "Focal Loss",
+  "preprocessing": "SimpleITK Medical-Grade"
+}
