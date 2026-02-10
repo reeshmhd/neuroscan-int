@@ -18,8 +18,11 @@ from dotenv import load_dotenv
 # Load environment variables
 load_dotenv()
 
+import gc
+
 app = Flask(__name__)
-CORS(app)
+# Enable CORS for all routes and origins to fix browser blocking
+CORS(app, resources={r"/*": {"origins": "*"}})
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -195,6 +198,9 @@ def predict():
             'success': False,
             'error': str(e)
         }), 500
+    finally:
+        # Force garbage collection to save memory on free tier
+        gc.collect()
 
 # ============ RUN SERVER ============
 if __name__ == '__main__':
