@@ -13,6 +13,10 @@ from torchvision import transforms, models
 import io
 import logging
 import os
+from dotenv import load_dotenv
+
+# Load environment variables
+load_dotenv()
 
 app = Flask(__name__)
 CORS(app)
