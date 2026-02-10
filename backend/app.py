@@ -41,7 +41,9 @@ class TransferLearningModel(nn.Module):
 
 # ============ CONFIGURATION ============
 DEVICE = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-MODEL_PATH = os.path.join('..', 'models', 'saved_models', 'resnet50_balanced_transfer.pth')
+# Robust path handling
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+MODEL_PATH = os.path.join(BASE_DIR, '..', 'models', 'saved_models', 'resnet50_balanced_transfer.pth')
 CLASS_NAMES = ['Normal', 'VeryMild', 'Mild', 'Moderate']
 
 # Descriptions for each class
